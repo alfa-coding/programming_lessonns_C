@@ -7,11 +7,11 @@ int main()
 
     if(a >b)
     {
-        printf("a es el mayor");
+        printf("a is the greatest");
     }
     else if( b>a)
     {
-        printf("b es el mayor");
+        printf("b is the greatest");
     }
     else
     {
