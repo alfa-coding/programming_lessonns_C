@@ -15,19 +15,19 @@ int main()
 
     printf("%d\n", node_on_stack.data);
 
-    Node *nodes = (Node *)malloc(2 * sizeof(Node));
+    Node *nodes_on_theHEAP = (Node *)malloc(2 * sizeof(Node));
 
     Node user_node;
 
     printf("Give a value to a new node\n");
     scanf("%d", &user_node.data);
 
-    nodes[0] = user_node;
-    nodes[1] = node_on_stack;
+    nodes_on_theHEAP[0] = user_node;
+    nodes_on_theHEAP[1] = node_on_stack;
 
     for (int i = 0; i < 2; i++)
     {
-        printf("node number:%d has data:%d\n",i ,nodes[i].data);
+        printf("node number:%d has data:%d\n",i ,nodes_on_theHEAP[i].data);
     }
 
     return 0;
